@@ -35,6 +35,8 @@ Partial Class Form1
         Me.Label5 = New System.Windows.Forms.Label()
         Me.xThree = New System.Windows.Forms.TextBox()
         Me.xTwo = New System.Windows.Forms.TextBox()
+        Me.xOne = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
@@ -83,7 +85,7 @@ Partial Class Form1
         '
         'Numbers
         '
-        Me.Numbers.Location = New System.Drawing.Point(403, 182)
+        Me.Numbers.Location = New System.Drawing.Point(518, 183)
         Me.Numbers.Name = "Numbers"
         Me.Numbers.Size = New System.Drawing.Size(105, 22)
         Me.Numbers.TabIndex = 7
@@ -131,9 +133,9 @@ Partial Class Form1
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
         Me.Label5.Location = New System.Drawing.Point(331, 178)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(68, 25)
+        Me.Label5.Size = New System.Drawing.Size(49, 25)
         Me.Label5.TabIndex = 13
-        Me.Label5.Text = " x^2 +"
+        Me.Label5.Text = " x^2"
         '
         'xThree
         '
@@ -151,11 +153,31 @@ Partial Class Form1
         Me.xTwo.TabIndex = 15
         Me.xTwo.TabStop = False
         '
+        'xOne
+        '
+        Me.xOne.Location = New System.Drawing.Point(401, 178)
+        Me.xOne.Name = "xOne"
+        Me.xOne.Size = New System.Drawing.Size(22, 22)
+        Me.xOne.TabIndex = 17
+        Me.xOne.TabStop = False
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.Label6.Location = New System.Drawing.Point(418, 178)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(68, 25)
+        Me.Label6.TabIndex = 16
+        Me.Label6.Text = " x^1 +"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1178, 664)
+        Me.Controls.Add(Me.xOne)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.xTwo)
         Me.Controls.Add(Me.xThree)
         Me.Controls.Add(Me.Label5)
@@ -189,4 +211,6 @@ Partial Class Form1
     Friend WithEvents Label5 As Label
     Friend WithEvents xThree As TextBox
     Friend WithEvents xTwo As TextBox
+    Friend WithEvents xOne As TextBox
+    Friend WithEvents Label6 As Label
 End Class
