@@ -31,7 +31,7 @@ Partial Class Form1
         Me.numberN = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Result = New System.Windows.Forms.Label()
+        Me.MathResult = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.xThree = New System.Windows.Forms.TextBox()
         Me.xTwo = New System.Windows.Forms.TextBox()
@@ -85,7 +85,7 @@ Partial Class Form1
         '
         'Numbers
         '
-        Me.Numbers.Location = New System.Drawing.Point(518, 183)
+        Me.Numbers.Location = New System.Drawing.Point(492, 182)
         Me.Numbers.Name = "Numbers"
         Me.Numbers.Size = New System.Drawing.Size(105, 22)
         Me.Numbers.TabIndex = 7
@@ -112,20 +112,20 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Label3.Location = New System.Drawing.Point(119, 313)
+        Me.Label3.Location = New System.Drawing.Point(69, 313)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(255, 58)
         Me.Label3.TabIndex = 11
         Me.Label3.Text = "Výsledek: "
         '
-        'Result
+        'MathResult
         '
-        Me.Result.AutoSize = True
-        Me.Result.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
-        Me.Result.Location = New System.Drawing.Point(380, 313)
-        Me.Result.Name = "Result"
-        Me.Result.Size = New System.Drawing.Size(0, 58)
-        Me.Result.TabIndex = 12
+        Me.MathResult.AutoSize = True
+        Me.MathResult.Font = New System.Drawing.Font("Microsoft Sans Serif", 30.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(238, Byte))
+        Me.MathResult.Location = New System.Drawing.Point(380, 313)
+        Me.MathResult.Name = "MathResult"
+        Me.MathResult.Size = New System.Drawing.Size(0, 58)
+        Me.MathResult.TabIndex = 12
         '
         'Label5
         '
@@ -181,7 +181,7 @@ Partial Class Form1
         Me.Controls.Add(Me.xTwo)
         Me.Controls.Add(Me.xThree)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Result)
+        Me.Controls.Add(Me.MathResult)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.numberN)
@@ -207,7 +207,7 @@ Partial Class Form1
     Friend WithEvents numberN As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Result As Label
+    Friend WithEvents MathResult As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents xThree As TextBox
     Friend WithEvents xTwo As TextBox
