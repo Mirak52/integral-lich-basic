@@ -7,7 +7,7 @@
                     Dim xTwoV As Double
                     Dim xThreeV As Double
                     Dim partCalc As Double
-
+                    n = 0
                     If xOne.Text <> Nothing Then
                         xOneV = xOne.Text
                     End If
@@ -34,15 +34,20 @@
 
                         If Numbers.Text <> Nothing And i = 0 Then
                             result = result + Numbers.Text
+                            y(i) = result
                         ElseIf Numbers.Text <> Nothing Then
                             partCalc = partCalc + Numbers.Text
+                            y(i) = partCalc
                         End If
                         If i <> numberN.Text And i <> 0 Then
                             result = result + partCalc * 2
+                            y(i) = partCalc
                         Else
                             result = result + partCalc
+                            y(i) = partCalc
                         End If
-
+                        x(i) = h * i
+                        n = i
                     Next
 
                     result = result * (h / 2)
@@ -65,5 +70,24 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Graph.Show()
+        Graph.showChart()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim soubor
+        SaveFileDialog1.ShowDialog()
+        soubor = SaveFileDialog1.FileName
+        FileOpen(1, soubor, OpenMode.Output)
+        Write(1, n)
+        For i = 0 To n
+            Write(1, x(i))
+            Write(1, y(i))
+        Next
+        FileClose(1)
     End Sub
 End Class

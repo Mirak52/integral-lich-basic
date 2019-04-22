@@ -37,6 +37,9 @@ Partial Class Form1
         Me.xTwo = New System.Windows.Forms.TextBox()
         Me.xOne = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.SuspendLayout()
         '
         'Button1
@@ -171,11 +174,31 @@ Partial Class Form1
         Me.Label6.TabIndex = 16
         Me.Label6.Text = " x^1 +"
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(648, 262)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(174, 47)
+        Me.Button2.TabIndex = 18
+        Me.Button2.Text = "Graf"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(648, 315)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(174, 67)
+        Me.Button3.TabIndex = 19
+        Me.Button3.Text = "Uložit"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1178, 664)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.xOne)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.xTwo)
@@ -213,4 +236,7 @@ Partial Class Form1
     Friend WithEvents xTwo As TextBox
     Friend WithEvents xOne As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class
