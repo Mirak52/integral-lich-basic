@@ -176,27 +176,29 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(648, 262)
+        Me.Button2.Location = New System.Drawing.Point(828, 140)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(174, 47)
+        Me.Button2.Size = New System.Drawing.Size(174, 101)
         Me.Button2.TabIndex = 18
         Me.Button2.Text = "Graf"
         Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Visible = False
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(648, 315)
+        Me.Button3.Location = New System.Drawing.Point(1008, 140)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(174, 67)
+        Me.Button3.Size = New System.Drawing.Size(174, 101)
         Me.Button3.TabIndex = 19
         Me.Button3.Text = "Uložit"
         Me.Button3.UseVisualStyleBackColor = True
+        Me.Button3.Visible = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1178, 664)
+        Me.ClientSize = New System.Drawing.Size(1541, 733)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.xOne)

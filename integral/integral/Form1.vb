@@ -1,7 +1,9 @@
 ﻿Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Button2.Hide()
+        Button3.Hide()
         If IsNumeric(IntegralA.Text) And IsNumeric(integralB.Text) And IsNumeric(numberN.Text) Then
-            If IntegralA.Text >= 0 And integralB.Text > IntegralA.Text And numberN.Text > 0 Then
+            If IntegralA.Text >= 0 And integralB.Text > IntegralA.Text And numberN.Text > 0 And IsNumeric(Numbers.Text) Or Numbers.Text = Nothing Then
                 If IsNumeric(xThree.Text) Or IsNumeric(xTwo.Text) Or IsNumeric(xOne.Text) Then
                     Dim xOneV As Double
                     Dim xTwoV As Double
@@ -44,7 +46,10 @@
                             y(i) = partCalc
                         Else
                             result = result + partCalc
-                            y(i) = partCalc
+                            If y(i) = Nothing Then
+                                y(i) = partCalc
+                            End If
+
                         End If
                         x(i) = h * i
                         n = i
@@ -52,15 +57,13 @@
 
                     result = result * (h / 2)
                     MathResult.Text = result
-
-                    If Numbers.Text = Nothing Then
-
-                    End If
+                    Button2.Show()
+                    Button3.Show()
                 Else
                     MathResult.Text = "Vyplňte čísla u X"
                 End If
             Else
-                MathResult.Text = "Horní index musí být větší než dolní"
+                MathResult.Text = "Prosím o kontrolu složitější příklady neumím"
             End If
         Else
             MathResult.Text = "Vyplňte čísla správně"
