@@ -71,10 +71,6 @@
 
     End Sub
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Graph.Show()
         Graph.showChart()
@@ -91,6 +87,14 @@
             Write(1, x(i))
             Write(1, y(i))
         Next
+        WriteLine(1, IntegralA.Text)
+        Write(1, integralB.Text)
+        WriteLine(1, xOne.Text)
+        Write(1, xTwo.Text)
+        Write(1, xThree.Text)
+        WriteLine(1, numberN.Text)
+        WriteLine(1, Numbers.Text)
+        WriteLine(1, MathResult.Text)
         FileClose(1)
     End Sub
 End Class
